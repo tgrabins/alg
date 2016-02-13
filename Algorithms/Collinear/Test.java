@@ -25,8 +25,10 @@ public class Test {
 	    StdDraw.show();
 
 	    // print and draw the line segments
-	    BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+	    //BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+	    FastCollinearPoints collinear = new FastCollinearPoints(points);
 	    LineSegment[] segments = collinear.segments();
+	    System.out.println("Done");
 	    for (int i = 0; i < collinear.numberOfSegments(); i++) {
 	    	StdOut.println(segments[i]);
 	    	segments[i].draw();

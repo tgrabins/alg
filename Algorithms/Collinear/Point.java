@@ -96,8 +96,8 @@ public class Point implements Comparable<Point> {
     		}
     	}
     }
-
-    /**
+    
+	/**
      * Compares two points by the slope they make with this point.
      * The slope is defined as in the slopeTo() method.
      *
@@ -144,10 +144,4 @@ public class Point implements Comparable<Point> {
         return "(" + x + ", " + y + ")";
     }
 
-    /**
-     * Unit tests the Point data type.
-     */
-    public static void main(String[] args) {
-        /* YOUR CODE HERE */
-    }
 }
